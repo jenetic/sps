@@ -1,19 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <script src="https://kit.fontawesome.com/f2d3412016.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Jenny L.</title>
+</head>
+<body>
+  <aside>
+    <div class="sidebar">
+      <img class="portrait" src="img/portrait.png"/> 
+      <div class="sidebar-bio">
+        <h2>Jenny L.</h2>
+        <p>UC San Diego</px>
+        <p>B.S. Mathematics—Computer Science</p>
+        </div>
+      <div class="contact">
+        <h3>Where to Find Me</h3>
+        <ul class="contact-list">
+          <li class="contact-item"><a href="mailto:j9lam@ucsd.edu" target="_blank"><i class="fas fa-envelope"></i>j9lam@ucsd.edu</a></li>
+          <li class="contact-item"><a href="https://www.linkedin.com/in/jwny" target="_blank"><i class="fab fa-linkedin-in"></i>Jenny L.</a></li>
+          <li class="contact-item"><a href="https://github.com/srnq" target="_blank"><i class="fab fa-github"></i>srnq</a></li>
+        </ul>
+      </div>
     </div>
-  </body>
+  </aside>
+  <main>
+    <div class="name-container">
+      <h1 class="hidden">.</h1><h1 id="name"></h1>
+    </div>
+    <div class="about">
+      <p>
+        I’m a student at UC San Diego studying math and computer science, as well as a computational research intern at Scripps Research. I'm currently seeking internship opportunities in software engineering and/or web development. Feel free to reach out to me if you ever want to chat. I'd love to make a new friend and expand my network! 
+      </p>
+      <h3 id="languages-header">Languages:</h3>
+      <div id="languages-content" class="skills">  
+        <p class="tag">JavaScript</p>
+        <p class="tag">Python</p>
+        <p class="tag">Java</p>
+        <p class="tag">HTML</p>
+        <p class="tag">CSS</p>
+      </div>
+      <br/>
+      <h3 id="tools-header">Tools and Frameworks:</h3>
+      <div id="tools-content" class="skills">  
+        <p class="tag">React.js</p>
+        <p class="tag">Node.js</p>
+        <p class="tag">Firebase</p>
+        <p class="tag">Pandas</p>
+        <p class="tag">Matplotlib</p>
+        <p class="tag">PyTorch</p>
+        <p class="tag">Git</p>
+        <p class="tag">Figma</p>
+      </div>
+
+    </div>
+    <div class="education">
+      <h2>Education</h2>
+      <div class="boxes">
+        <div class="top-box">
+          <h3>University of California San Diego, 2021-2025</h3>
+          <p class="major">B.S. Mathematics—Computer Science</p>
+        </div>
+        <div class="box">
+          <p>Relevant Coursework</p>
+          <ul>
+            <li class="first">Data Structures and Algorithms</li>
+            <li>Software Tools and Techniques Lab</li>
+            <li>Object Oriented Programming (Java)</li>
+            <li class="last">Mathematical Proof / Reasoning </li>
+          </ul>
+        </div>
+        <div class="box">
+          <p>Activities and Societies</p>
+          <ul>
+            <li class="first">First-Year Experience Committee Board Member, Women in Computing</li>
+            <li class="last">AI Project Member, Association for Computing Machinery (ACM) AI</li>
+          </ul>
+        </div>
+      </div>
+   </div>
+   <div class="experience">
+      <h2>Experience</h2>
+      <div class="boxes">
+        <div class="box">
+          <div class="header">
+            <p class="position">Computational Research Intern @ Scripps Research</p>
+            <p class="date">Nov 2021 - Present</p>
+          </div>
+          <div class="tech-used">
+            <p class="tag">Python</p>
+            <p class="tag">Pandas</p>
+            <p class="tag">Matplotlib</p>
+          </div>
+          <p>
+            At the Stowers Lab, I’m working on analyzing mice tracking videos from behavioral experiments to quantify and gain insight on the social behavior of mice. I write scripts using Python (Pandas, Matplotlib) to process, analyze, and create visualizations of mice tracking data.
+          </p>
+        </div>
+        <div class="box">
+          <div class="header">
+            <p class="position">Computational Research Intern @ Stanford University</p>
+            <p class="date">Jun 2021 - Aug 2021</p>
+          </div>
+          <div class="tech-used">  
+            <p class="tag">Python</p>
+            <p class="tag">Matplotlib</p>
+          </div>
+          <p>
+            As a research intern at Stanford's summer internship program, I worked with two other interns to create a comprehensive k-mer index (mutation table) of all possible substitution mutations of the COVID-19 virus using Python to allow for efficient and easy lookup of mutations. I also analyzed 2.5+ million cases of COVID-19 using Python, identifying several patterns and trends in its variants of concerns. 
+          </p>
+        </div>
+      </div>
+   </div>
+   <div class="projects">
+    <h2>Projects</h2>
+    <div class="boxes">
+      <a class="box" href="https://github.com/srnq/studybudz" target="_blank">
+        <img src="img/study_budz.png"/> 
+        <div class="desc">
+          <p>Study Budz</p>
+          <div class="tech-used">
+            <p class="tag">React.js</p>
+            <p class="tag">Firebase</p>
+            <p class="tag">JavaScript</p>
+            <p class="tag">HTML</p>
+            <p class="tag">CSS</p>
+          </div>
+        </div>
+      </a>
+      <a class="box" href="https://github.com/srnq/daily-dollars" target="_blank">
+        <img src="img/daily_dollars.png"/> 
+        <div class="desc">
+          <p>Daily Dollars</p>
+          <div class="tech-used">
+            <p class="tag">JavaScript</p>
+            <p class="tag">HTML</p>
+            <p class="tag">CSS</p>
+          </div>
+        </div>
+      </a>
+      <a class="box" href="https://github.com/srnq/srnq.github.io" target="_blank">
+        <img src="img/logo.png"/> 
+        <div class="desc">
+          <p>This Site!</p>
+          <div class="tech-used">
+            <p class="tag">JavaScript</p>
+            <p class="tag">HTML</p>
+            <p class="tag">CSS</p>
+          </div>
+        </div>
+      </a>
+    </div>
+   </div>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
