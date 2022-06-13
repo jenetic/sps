@@ -84,6 +84,34 @@ i {
   margin: 0rem 0.6rem 0rem 0rem;
 }
 
+textarea {
+    resize: none;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    width: 95%;
+    height: 3rem;
+    background-color: var(--bg2);;
+    border: none;
+    outline: none;
+    color: var(--text);
+    padding: 0.6rem;
+    margin: 0.7rem auto;
+}
+
+input {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.4rem 1rem;
+    background-color: var(--text);
+    font: inherit;
+    color: var(--bg2);
+}
+
+input:hover {
+    background-color: var(--link);
+}
+
 /* TAGS */
 
 .tag {
@@ -125,7 +153,7 @@ i {
   top: 0;
 }
 
-.sidebar .contact {
+.contact, .send-message {
   margin: 2rem 0rem 0rem;
 }
 
