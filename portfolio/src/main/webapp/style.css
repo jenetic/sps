@@ -84,6 +84,34 @@ i {
   margin: 0rem 0.6rem 0rem 0rem;
 }
 
+textarea {
+    resize: none;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    width: 95%;
+    height: 3rem;
+    background-color: var(--bg2);;
+    border: none;
+    outline: none;
+    color: var(--text);
+    padding: 0.6rem;
+    margin: 0.2rem auto 0.2rem;
+}
+
+input {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.4rem 1rem;
+    background-color: var(--text);
+    font: inherit;
+    color: var(--bg2);
+}
+
+input:hover {
+    background-color: var(--link);
+}
+
 /* TAGS */
 
 .tag {
@@ -125,8 +153,8 @@ i {
   top: 0;
 }
 
-.sidebar .contact {
-  margin: 2rem 0rem 0rem;
+.contact {
+  margin: 0.5rem 0rem 0rem;
 }
 
 .sidebar .portrait {
@@ -262,6 +290,14 @@ i {
 
 .projects .boxes :hover {
   background: var(--bg3);
+}
+
+.small-textarea {
+    height: 1rem;
+}
+
+.send-message p {
+    margin: 0rem 0rem 0.2rem;
 }
 
 @media (min-width: 1024px) {
