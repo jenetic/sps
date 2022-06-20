@@ -20,6 +20,14 @@
   </properties>
 
   <dependencies>
+
+    <!-- Datastore -->
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-datastore</artifactId>
+        <version>1.104.0</version>
+    </dependency>
+    
     <!-- Java Servlets API -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -38,6 +46,14 @@
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+
+    <!-- jsoup -->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.14.2</version>
+    </dependency>
+
   </dependencies>
 
   <build>
